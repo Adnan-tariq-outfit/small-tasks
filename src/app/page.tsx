@@ -1,8 +1,9 @@
 export default function Home() {
   const links = [
     { name: "infinite Scroll", href: "/infinite-scroll" },
-    { name: "abort", href: "/abort" },
-    { name: "todo-list", href: "/todo-list" },
+    { name: "Abort Request", href: "/abort" },
+    { name: "Todo App", href: "/todo-list" },
+    { name: "Quiz App", href: "/quiz-app" },
   ];
 
   return (
