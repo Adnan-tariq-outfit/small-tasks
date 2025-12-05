@@ -1,3 +1,4 @@
+"use client";
 export default function Home() {
   const links = [
     { name: "infinite Scroll", href: "/infinite-scroll" },
@@ -17,6 +18,16 @@ export default function Home() {
           </a>
         ))}
       </div>
+
+      <h1>Clipbaord Events</h1>
+      <input
+        onCopy={() => console.log("Copied")}
+        onCut={() => console.log("Cut")}
+        onPaste={(e) => {
+          const text = e.clipboardData.getData("text");
+          console.log("Pasted:", text);
+        }}
+      />
     </main>
   );
 }
